@@ -1,0 +1,64 @@
+body {
+    font-family: sans-serif;
+    height: 100vh;
+    background-color: #1d1d1d;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 5px solid #fff;
+}
+
+.container {
+    width: 300px;
+}
+
+h1 {
+    color: #fff;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+#currentNumber {
+    color: #fff;
+    font-size: 100px;
+    text-align: center;
+}
+
+.buttons {
+    display: flex;
+    flex-direction: row;
+}
+
+button {
+    width: 100%;
+    color: #fff;
+    padding: 10px;
+    background-color: #1d1d1d;
+    border: 1px solid white;
+    border-radius: 5px;
+    margin-top: 25px;
+    opacity: 0.5;
+}
+
+#increase {
+    border-color: green;
+}
+
+#decrease {
+    border-color: red;
+}
+
+button:hover {
+    color: rgb(236, 154, 2);
+    opacity: 1;
+}
+
+@media only screen and (max-width: 415px) {
+    .buttons {
+      flex-direction: column;
+    }
+    
+    button {
+      width: 100%;
+    }
+}

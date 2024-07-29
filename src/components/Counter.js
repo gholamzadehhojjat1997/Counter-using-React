@@ -1,5 +1,6 @@
 import { useState } from "react";
-import "./Counter.css"
+import Buttons from "./Buttons";
+import "./Counter.css";
 
 
 function Counter() {
@@ -41,13 +42,13 @@ function Counter() {
             <h1>Counter</h1>
             <p id="currentNumber" style={{color: newcolor}}>{currentNumber}</p>
             <div className="buttons">
-                <button id="increase" onClick={increase}>+</button>
+                <Buttons text="+" id="increase" clickHandler={increase}></Buttons>
                 { !(currentNumber === 0) && (
                     <>
-                        <button id="reset" onClick={reset}>Reset</button>
+                        <Buttons text="Reset" id="reset" clickHandler={reset}></Buttons>
                     </>
                 )}
-                <button id="decrease" onClick={decrease}>-</button>
+                <Buttons text="-" id="decrease" clickHandler={decrease}></Buttons>
             </div>
             </div>
         </>

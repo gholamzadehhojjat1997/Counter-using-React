@@ -1,0 +1,18 @@
+#increase {
+    border-color: green;
+}
+
+#decrease {
+    border-color: red;
+}
+
+button:hover {
+    color: rgb(236, 154, 2);
+    opacity: 1;
+}
+
+@media only screen and (max-width: 415px) {
+    button {
+      width: 100%;
+    }
+}
